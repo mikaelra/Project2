@@ -63,6 +63,10 @@ def genIsingData(L=40, amount=10000, testamount=0.95):
 
 if __name__ == '__main__':
 
+    # The commented out sections provide some images and data used in the project
+    # This one provides the bootstrap-data for task b)
+
+
     L=40; amount=10000; testamount=0.95
 
     Xtrain, Xtest, Ytrain, Ytest = genIsingData(L=L, amount= amount, testamount=testamount)

@@ -129,6 +129,7 @@ Here is an image of how I modelled the neural networks. Both networks are multil
 Now we will take a look at neural networks to see if they can solve what we made the linear regression models solve. Testing around a bit with Tensorflow I figured out that a multi layered perceptron with 150 nodes in the hidden layer would work just fine.\\
 We are using the backpropagation algorithm to adapt the weights in the network.\\
 The function which is used in the hidden nodes are the sigmoid function and use a linear function in the output node.\\
+\\The cost function used here is the half of MSE, but I mostly used the R2-score to see how the network did.\\
 Using a linear function makes it able to guess numbers along the real axis, instead of numbers between zero and one.
 The train-algorithm of the network calclulates the R2-score over the test-data between every iteration/generation. This is stored and we can look at the plot how well it does over 100 iterations/generations.\\
 \includegraphics[scale=.7]{images/linearNN}\\
@@ -151,11 +152,13 @@ The R2-score tells us of course most of how accurate it is, but it is nice to ha
 
 \clearpage
 \section{Classifying the Ising model phase using neural networks}
-Now we have to change up the neural networks cost-function. Following this we also have to change at least the function in the outputnode.\\
+In this neural network I have used half of MSE as the cost-function. I tried using the log cross-entropy function, but
+$$ C(x, t) = \frac{1}{2} (f(x) - t)^2$$
+seemed to do the trick here. In this case f(x) is the computed y from the network and t is the given target.\\
 What I did is I continued using the sigmoid function in the hidden layer. After this, we change the output function to be sigmoid. This felt the most natural and we get pretty good results fast.\\
 Here is a plot of how the accuracy behaved in the span of the epochs:\\
 \includegraphics[scale=.7]{images/classNN100epoch}\\
-It ends up with an accuracy of 0.997 which is extremely good. This means that we can rely on our neural network. For every 1000th prediction, it will only guess wrong 3 times.\\
+It ends up with an accuracy of 0.997 which is extremely good. This means that we can rely on our neural network. For every 1000th prediction, it will only predict wrong 3 times.\\
 This is great numbers, but TensorFlow has again better scores. During training it actually had a 100\% correct prediction accuracy. It ended up with an accuracy score of 0.9999230769230769. So this neural net gets every 13000th prediction wrong. 
 
 

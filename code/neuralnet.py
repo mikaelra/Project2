@@ -25,14 +25,6 @@ n_hidden_neurons=n_hidden_neurons, n_categories=n_categories)
 # Train the network
 dnn.train()
 
-# Record the data which gets predicted wrong
-wronglist = []
-for i in range(len(X_test)):
-    y_p = round(dnn.feed_forward_out(X_test[i:i+1])[0][0])
-    if y_p != Y_test[i:i+1][0][0]:
-        wronglist.append(i)
-        #showimage(X_test[i:i+1], Y_test[i:i+1])
-
 # This shows the progress of the accuracy over the epochs
 plt.plot(dnn.accuracyscores)
 plt.ylabel('Accuracy')
@@ -61,19 +53,8 @@ model.fit(
     validation_data=[X_test, Y_test],
     #callbacks=[tensorboard_callback],
 )
-wronglist2 = []
-for i in range(len(X_test)):
-    y_p = round(float(model.predict(X_test[i:i+1])))
-    if y_p != Y_test[i:i+1][0][0]:
-        wronglist2.append(i)
-        showimage(X_test[i:i+1], Y_test[i:i+1])
 
 
 
 print('accuracy:', model.evaluate(X_test, Y_test))
 # Gets accuarcy of approx 0.9995
-
-print('wrong prediction in my NN:')
-print(wronglist)
-print('wrong in TF NN:')
-print(wronglist2)

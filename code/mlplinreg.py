@@ -27,6 +27,7 @@ dnn.train()
 # Samples
 c = np.random.choice(len(X_test), 5)
 
+"""
 # This tests predicts the Ising energies from the test data and compares it with the real value
 for i in c:
     print('Sample # ' + str(i))
@@ -35,7 +36,6 @@ for i in c:
     print('Actual:')
     print(Y_test[i:i+1])
     print()
-"""
 """
 
 print('R2-score of my NN:')

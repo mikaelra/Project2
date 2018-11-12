@@ -20,6 +20,9 @@ def showimage(X, y):
 
 if __name__ == '__main__':
 
+    # Uncomment parts of the code to run it
+    # The ones with #PLOT takes a very long time without the shortening of the testsamples
+
     X_train, X_test, Y_train, Y_test = getrealdata(train_to_test_ratio=0.9)
 
     """
@@ -44,17 +47,19 @@ if __name__ == '__main__':
     from sklearn.linear_model import LogisticRegression
 
     """
+    # PLOT
     logreg = LogisticRegression(random_state=0, solver='saga', max_iter=100)
     logreg.fit(X_train, Y_train)
     print('Accuracy score of sklearn LogReg using Stochastic Average Descent and max_iter of 100:')
     print(logreg.score(X_test, Y_test))
-    #Outputs 0.7053117408906883 when training to test ratio is 0.95
+    # Outputs 0.7053117408906883 when training to test ratio is 0.95
     """
 
     # Under is a lot of plots of different parameters to see what scores they get
 
     """
     for eta in [0.001, 1e-5, 1e-8, 1e-10, 1e-14]:
+        # PLOT
         # Using LogReg with Stochastic Gradient descent
         lr = LogisticRegGD(X_train, Y_train, X_test, Y_test,eta=eta ,plotacc=True, max_iter=10)
         lr.fit()
@@ -67,6 +72,7 @@ if __name__ == '__main__':
 
     """
     for iter in [10, 100, 250, 500, 1000]:
+        # PLOT
         # Using LogReg with Stochastic Gradient descent
         lr = LogisticRegGD(X_train, Y_train, X_test, Y_test, eta=1e-8,plotacc=True, max_iter=iter)
         lr.fit()
