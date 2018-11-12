@@ -16,8 +16,6 @@
 \section{Abstract}
 In this project we will take a look at classifying data using different methods from project 1 and neural networks. Can you predict all models with linear regression or can the neural networks ``black boxes''  solve problems which linear regression models cannot?
 
-\section{Introduction to Project 2}
-
 \section{The data}
 \subsection{The 1D generated data}
 In the 1D example we are interested in the J's of the nearest neighbor spins, which is multiplied to compute the energies. The energies are produced in the training data like this:
@@ -65,6 +63,7 @@ So in conclusion; Ridge and Lasso are both good in predicting this data, but Las
 
 \subsection{Bias-variance analysis with bootstrapping}
 Doing bootstrap on the data and computing the bias and variance. Data of different $\alpha$'s lies in the text file regression. We can take a look at the different models with $\alpha$ = 0.001. Data was as follows:\\
+\\
 Ridge:\\
 alpha: 0.001000, bootstraps: 500\\
 VAR: 37.649600\\
@@ -75,13 +74,10 @@ alpha: 0.001000, bootstraps: 500\\
 VAR: 42.878464\\
 BIAS: 40.222182\\
 \\
-The values are pretty even, but the variance of Ridge is approximately 10 percent lower. From the plots this makes sense, we saw a bit more variance in the betas in Lasso. Other than this both values are pretty even.
+The values are pretty even, but the variance of Ridge is approximately 10 percent lower. From the plots this makes sense, we saw a bit more variance in the betas in Lasso. Other than this both values are pretty even.\\
 \\
-\\Why is Lasso's variance not lower?
-
-
-
-\clearpage
+From the theory we should expect a lower variance from Lasso, but this doesn't seem to be the case here. It seems like in this particular problem, Ridge eliminates the variance no matter the choice of alpha. Lasso solves the problem better, but is more vulnearable for the change in alpha.
+\\
 \section{Determing the phase of real data}
 The next step is now to look at real two dimensional data and try to classify them using logistic regression. The data we are looking at looks like this:\\
 \includegraphics[scale=.7]{images/ordered}\\
@@ -104,6 +100,12 @@ $$
 $$
 Then this gets computed over each epoch and we step closer to the correct solution.
 By modifying the existing code in how to implement the data, we can use logistic regression on it.\\
+\\
+This is the gradient descent method, but in my case I am using stochastic gradient descent.\\
+The underlying idea comes from that you can write $ C(\beta) = \sum^{n}_{i=1} c_i (x_i, \beta)$. Using this we it follows that the derivative can be written as:
+$$\nabla_\beta C_n (\beta) = 2 {X_ n}^T ({X_n}\beta - y_n)$$
+where n determines how many samples we choose. This will make calculations go much faster. The downside is the element of randomness: We will not get the same fit each time. That's why it's being runned several times. We should, however, expect similar results each time, because we run over so many iterations.\\
+\\
 Using scikitlearn's methods we get a accuracy score of 0.7053117408906883 when training to test ratio is 0.95. This might seem like a decently high number, but this accuracy is closer to 50 percent than it is to a 100 percent.\\
 If we try to compare it a bit to the linear regression scores, they got mostly an R2-score of 0.99 or higher. Even if you can't compare the different methods directly, a .99 score in R2 is an almost perfect score.\\
 An accuracy score of 0.70 is closer to guessing than it is to predicting accurately.\\
@@ -125,6 +127,7 @@ Here is an image of how I modelled the neural networks. Both networks are multil
 \includegraphics[scale=.4]{images/mlplayout}\\
 \subsection{Using a neural network}
 Now we will take a look at neural networks to see if they can solve what we made the linear regression models solve. Testing around a bit with Tensorflow I figured out that a multi layered perceptron with 150 nodes in the hidden layer would work just fine.\\
+We are using the backpropagation algorithm to adapt the weights in the network.\\
 The function which is used in the hidden nodes are the sigmoid function and use a linear function in the output node.\\
 Using a linear function makes it able to guess numbers along the real axis, instead of numbers between zero and one.
 The train-algorithm of the network calclulates the R2-score over the test-data between every iteration/generation. This is stored and we can look at the plot how well it does over 100 iterations/generations.\\
@@ -179,7 +182,7 @@ My conclusion here is to use the neural network. It would be fine using regressi
 Statistical Learning}. Springer, 2009.
   \item Ravndal and Baar. Project 1, fys-stk4155, 2018.
   \item Ravndal. Project 2, fys-stk4155, 2018.
-  \item MIchael Nielsen. How the backpropagation algorithm works. 2018
+  \item Michael Nielsen. How the backpropagation algorithm works. 2018
 \end{enumerate}
 
 
