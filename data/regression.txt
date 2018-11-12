@@ -1,0 +1,81 @@
+Output from the linear regression data
+
+R2 score of Lasso with alpha = 0.9
+0.18027321938745078
+MSE score of Lasso with alpha = 0.9
+34.97340045570735
+
+R2 score of Ridge with alpha = 0.9
+0.9999999971161928
+MSE score of Ridge with alpha = 0.9
+1.2303677455311343e-07
+
+-----------------------------------
+R2 score of Lasso with alpha = 0.1
+0.9898394507378829
+MSE score of Lasso with alpha = 0.1
+0.4334968267456436
+
+R2 score of Ridge with alpha = 0.1
+0.9999999999643935
+MSE score of Ridge with alpha = 0.1
+1.5191352987890683e-09
+
+-----------------------------------
+R2 score of Lasso with alpha = 0.001
+0.9999989839436036
+MSE score of Lasso with alpha = 0.001
+4.33497453981647e-05
+
+R2 score of Ridge with alpha = 0.001
+0.9999999999999964
+MSE score of Ridge with alpha = 0.001
+1.519155617912304e-13
+
+-----------------------------------
+R2 score of Lasso with alpha = 1e-05
+0.9999999981210006
+MSE score of Lasso with alpha = 1e-05
+8.016695475884506e-08
+
+R2 score of Ridge with alpha = 1e-05
+1.0
+MSE score of Ridge with alpha = 1e-05
+1.5191731085465154e-17
+
+Bootstrap-data:
+
+Ridge:
+alpha: 1.000000, bootstraps: 500
+VAR: 38.363136
+BIAS: 40.294579
+
+alpha: 0.100000, bootstraps: 500
+VAR: 41.378496
+BIAS: 40.331853
+
+alpha: 0.001000, bootstraps: 500
+VAR: 37.649600
+BIAS: 40.367488
+
+alpha: 0.000010, bootstraps: 500
+VAR: 40.106176
+BIAS: 40.215885
+
+
+Lasso:
+alpha: 1.000000, bootstraps: 500
+VAR: 34.601664
+BIAS: 40.255130
+
+alpha: 0.100000, bootstraps: 500
+VAR: 38.316224
+BIAS: 40.489830
+
+alpha: 0.001000, bootstraps: 500
+VAR: 42.878464
+BIAS: 40.222182
+
+alpha: 0.000010, bootstraps: 500
+VAR: 43.024064
+BIAS: 40.319462

@@ -1,0 +1,325 @@
+Accuracy of my neural net after 100 epochs:
+0.9970769230769231
+
+Accuracy of TF's neural net after 100 epochs:
+0.9999230769230769
+
+
+-----------------------------
+Accuracy of my neural network during training:
+Epoch # 1 done
+Accuracy: 0.9800769230769231
+
+Epoch # 2 done
+Accuracy: 0.9886923076923076
+
+Epoch # 3 done
+Accuracy: 0.9933076923076923
+
+Epoch # 4 done
+Accuracy: 0.9943076923076923
+
+Epoch # 5 done
+Accuracy: 0.996
+
+Epoch # 6 done
+Accuracy: 0.9964615384615385
+
+Epoch # 7 done
+Accuracy: 0.9966923076923077
+
+Epoch # 8 done
+Accuracy: 0.9959230769230769
+
+Epoch # 9 done
+Accuracy: 0.9965384615384615
+
+Epoch # 10 done
+Accuracy: 0.9959230769230769
+
+Epoch # 11 done
+Accuracy: 0.9953076923076923
+
+Epoch # 12 done
+Accuracy: 0.9966153846153846
+
+Epoch # 13 done
+Accuracy: 0.9963076923076923
+
+Epoch # 14 done
+Accuracy: 0.9968461538461538
+
+Epoch # 15 done
+Accuracy: 0.9973076923076923
+
+Epoch # 16 done
+Accuracy: 0.9968461538461538
+
+Epoch # 17 done
+Accuracy: 0.9975384615384615
+
+Epoch # 18 done
+Accuracy: 0.9971538461538462
+
+Epoch # 19 done
+Accuracy: 0.9962307692307693
+
+Epoch # 20 done
+Accuracy: 0.9974615384615385
+
+Epoch # 21 done
+Accuracy: 0.998
+
+Epoch # 22 done
+Accuracy: 0.9973076923076923
+
+Epoch # 23 done
+Accuracy: 0.9977692307692307
+
+Epoch # 24 done
+Accuracy: 0.9973846153846154
+
+Epoch # 25 done
+Accuracy: 0.9955384615384615
+
+Epoch # 26 done
+Accuracy: 0.9959230769230769
+
+Epoch # 27 done
+Accuracy: 0.9968461538461538
+
+Epoch # 28 done
+Accuracy: 0.9973076923076923
+
+Epoch # 29 done
+Accuracy: 0.9970769230769231
+
+Epoch # 30 done
+Accuracy: 0.9964615384615385
+
+Epoch # 31 done
+Accuracy: 0.9976923076923077
+
+Epoch # 32 done
+Accuracy: 0.9975384615384615
+
+Epoch # 33 done
+Accuracy: 0.9970769230769231
+
+Epoch # 34 done
+Accuracy: 0.9973076923076923
+
+Epoch # 35 done
+Accuracy: 0.9974615384615385
+
+Epoch # 36 done
+Accuracy: 0.9973076923076923
+
+Epoch # 37 done
+Accuracy: 0.9973076923076923
+
+Epoch # 38 done
+Accuracy: 0.998
+
+Epoch # 39 done
+Accuracy: 0.9976153846153846
+
+Epoch # 40 done
+Accuracy: 0.9979230769230769
+
+Epoch # 41 done
+Accuracy: 0.9975384615384615
+
+Epoch # 42 done
+Accuracy: 0.9975384615384615
+
+Epoch # 43 done
+Accuracy: 0.9974615384615385
+
+Epoch # 44 done
+Accuracy: 0.9976923076923077
+
+Epoch # 45 done
+Accuracy: 0.9973846153846154
+
+Epoch # 46 done
+Accuracy: 0.9973076923076923
+
+Epoch # 47 done
+Accuracy: 0.9970769230769231
+
+Epoch # 48 done
+Accuracy: 0.9977692307692307
+
+Epoch # 49 done
+Accuracy: 0.9974615384615385
+
+Epoch # 50 done
+Accuracy: 0.9972307692307693
+
+Epoch # 51 done
+Accuracy: 0.9977692307692307
+
+Epoch # 52 done
+Accuracy: 0.9970769230769231
+
+Epoch # 53 done
+Accuracy: 0.9973076923076923
+
+Epoch # 54 done
+Accuracy: 0.9966923076923077
+
+Epoch # 55 done
+Accuracy: 0.9970769230769231
+
+Epoch # 56 done
+Accuracy: 0.9972307692307693
+
+Epoch # 57 done
+Accuracy: 0.9973076923076923
+
+Epoch # 58 done
+Accuracy: 0.9973846153846154
+
+Epoch # 59 done
+Accuracy: 0.9968461538461538
+
+Epoch # 60 done
+Accuracy: 0.9971538461538462
+
+Epoch # 61 done
+Accuracy: 0.9967692307692307
+
+Epoch # 62 done
+Accuracy: 0.9968461538461538
+
+Epoch # 63 done
+Accuracy: 0.9960769230769231
+
+Epoch # 64 done
+Accuracy: 0.997
+
+Epoch # 65 done
+Accuracy: 0.9970769230769231
+
+Epoch # 66 done
+Accuracy: 0.9972307692307693
+
+Epoch # 67 done
+Accuracy: 0.9967692307692307
+
+Epoch # 68 done
+Accuracy: 0.9971538461538462
+
+Epoch # 69 done
+Accuracy: 0.9971538461538462
+
+Epoch # 70 done
+Accuracy: 0.9968461538461538
+
+Epoch # 71 done
+Accuracy: 0.997
+
+Epoch # 72 done
+Accuracy: 0.997
+
+Epoch # 73 done
+Accuracy: 0.9966153846153846
+
+Epoch # 74 done
+Accuracy: 0.9968461538461538
+
+Epoch # 75 done
+Accuracy: 0.9971538461538462
+
+Epoch # 76 done
+Accuracy: 0.997
+
+Epoch # 77 done
+Accuracy: 0.997
+
+Epoch # 78 done
+Accuracy: 0.9969230769230769
+
+Epoch # 79 done
+Accuracy: 0.9968461538461538
+
+Epoch # 80 done
+Accuracy: 0.9968461538461538
+
+Epoch # 81 done
+Accuracy: 0.997
+
+Epoch # 82 done
+Accuracy: 0.9968461538461538
+
+Epoch # 83 done
+Accuracy: 0.9968461538461538
+
+Epoch # 84 done
+Accuracy: 0.997
+
+Epoch # 85 done
+Accuracy: 0.9968461538461538
+
+Epoch # 86 done
+Accuracy: 0.9967692307692307
+
+Epoch # 87 done
+Accuracy: 0.9970769230769231
+
+Epoch # 88 done
+Accuracy: 0.9970769230769231
+
+Epoch # 89 done
+Accuracy: 0.9968461538461538
+
+Epoch # 90 done
+Accuracy: 0.9966923076923077
+
+Epoch # 91 done
+Accuracy: 0.9969230769230769
+
+Epoch # 92 done
+Accuracy: 0.9974615384615385
+
+Epoch # 93 done
+Accuracy: 0.9970769230769231
+
+Epoch # 94 done
+Accuracy: 0.9970769230769231
+
+Epoch # 95 done
+Accuracy: 0.9972307692307693
+
+Epoch # 96 done
+Accuracy: 0.9960769230769231
+
+Epoch # 97 done
+Accuracy: 0.9971538461538462
+
+Epoch # 98 done
+Accuracy: 0.9972307692307693
+
+Epoch # 99 done
+Accuracy: 0.9966923076923077
+
+Epoch # 100 done
+Accuracy: 0.9970769230769231
+-----------------------------
+Tensorflow's accuracy after each epoch over 15 epochs:
+# 1:  0.9989
+# 2:  0.9989
+# 3:  0.9995
+# 4:  0.9993
+# 5:  0.9997
+# 6:  0.9999
+# 7:  0.9998
+# 8:  0.9998
+# 9:  1.0000
+# 10: 0.9999
+# 11: 0.9998
+# 12: 0.9998
+# 13: 1.0000
+# 14: 1.0000
+# 15: 0.9999

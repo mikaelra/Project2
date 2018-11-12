@@ -1,0 +1,373 @@
+Some predictions of test data using the trained neural network.
+
+Sample # 172
+Predicting ising energy:
+[[3.76808941]]
+Actual:
+[[4.]]
+
+Sample # 583
+Predicting ising energy:
+[[-6.95956579]]
+Actual:
+[[-8.]]
+
+Sample # 787
+Predicting ising energy:
+[[9.37251406]]
+Actual:
+[[8.]]
+
+Sample # 850
+Predicting ising energy:
+[[-0.01350432]]
+Actual:
+[[0.]]
+
+Sample # 481
+Predicting ising energy:
+[[4.84370393]]
+Actual:
+[[4.]]
+
+R2-score of my NN:
+0.9555526601130643
+-------------------------
+TensorFlow doing the same things:
+
+Sample # 172
+Predicting ising energy:
+[[4.386107]]
+Actual energy:
+[[4.]]
+
+Sample # 583
+Predicting ising energy:
+[[-8.253661]]
+Actual energy:
+[[-8.]]
+
+Sample # 787
+Predicting ising energy:
+[[8.00584]]
+Actual energy:
+[[8.]]
+
+Sample # 850
+Predicting ising energy:
+[[0.55443907]]
+Actual energy:
+[[0.]]
+
+Sample # 481
+Predicting ising energy:
+[[4.3612957]]
+Actual energy:
+[[4.]]
+
+R2score of TF NN:
+0.9893878879138897
+
+
+-------------------------
+R2-score over 100 epochs of my neural network:
+
+Epoch # 1 done
+R2:  0.011245785967162192
+
+Epoch # 2 done
+R2:  0.04077950144482634
+
+Epoch # 3 done
+R2:  0.3210451678546652
+
+Epoch # 4 done
+R2:  0.4723938090250035
+
+Epoch # 5 done
+R2:  0.6050847648878426
+
+Epoch # 6 done
+R2:  0.7007287614241209
+
+Epoch # 7 done
+R2:  0.7570433080696068
+
+Epoch # 8 done
+R2:  0.7920273310910513
+
+Epoch # 9 done
+R2:  0.8126392471291899
+
+Epoch # 10 done
+R2:  0.8251411617735707
+
+Epoch # 11 done
+R2:  0.8374374452001423
+
+Epoch # 12 done
+R2:  0.8496416539131352
+
+Epoch # 13 done
+R2:  0.8609764748814341
+
+Epoch # 14 done
+R2:  0.8673464485058182
+
+Epoch # 15 done
+R2:  0.8734603064933252
+
+Epoch # 16 done
+R2:  0.8770633203687679
+
+Epoch # 17 done
+R2:  0.8814546880681507
+
+Epoch # 18 done
+R2:  0.8900901961019884
+
+Epoch # 19 done
+R2:  0.8956227266901509
+
+Epoch # 20 done
+R2:  0.8995335673061586
+
+Epoch # 21 done
+R2:  0.9067462931153478
+
+Epoch # 22 done
+R2:  0.9090330119284566
+
+Epoch # 23 done
+R2:  0.913005995236138
+
+Epoch # 24 done
+R2:  0.9182271812295322
+
+Epoch # 25 done
+R2:  0.9201525125446599
+
+Epoch # 26 done
+R2:  0.9232270575473168
+
+Epoch # 27 done
+R2:  0.924998304109856
+
+Epoch # 28 done
+R2:  0.9270246270472585
+
+Epoch # 29 done
+R2:  0.9288475285549921
+
+Epoch # 30 done
+R2:  0.9304841670954631
+
+Epoch # 31 done
+R2:  0.9320766867341989
+
+Epoch # 32 done
+R2:  0.9335746045783482
+
+Epoch # 33 done
+R2:  0.9331688073396819
+
+Epoch # 34 done
+R2:  0.9344451380877481
+
+Epoch # 35 done
+R2:  0.9369082876049704
+
+Epoch # 36 done
+R2:  0.937573413965484
+
+Epoch # 37 done
+R2:  0.9383732387416912
+
+Epoch # 38 done
+R2:  0.9405220273840589
+
+Epoch # 39 done
+R2:  0.9414038718896486
+
+Epoch # 40 done
+R2:  0.9427339111737202
+
+Epoch # 41 done
+R2:  0.9434597244476814
+
+Epoch # 42 done
+R2:  0.944011992230022
+
+Epoch # 43 done
+R2:  0.9443942651853745
+
+Epoch # 44 done
+R2:  0.9442096851420394
+
+Epoch # 45 done
+R2:  0.9442682740129985
+
+Epoch # 46 done
+R2:  0.9442956807907551
+
+Epoch # 47 done
+R2:  0.9454013508332468
+
+Epoch # 48 done
+R2:  0.9447467315038992
+
+Epoch # 49 done
+R2:  0.9452442031305259
+
+Epoch # 50 done
+R2:  0.94612517480672
+
+Epoch # 51 done
+R2:  0.9460010935329812
+
+Epoch # 52 done
+R2:  0.9457500946591093
+
+Epoch # 53 done
+R2:  0.9465049218172434
+
+Epoch # 54 done
+R2:  0.9465560278295994
+
+Epoch # 55 done
+R2:  0.946379822988464
+
+Epoch # 56 done
+R2:  0.9465830450585663
+
+Epoch # 57 done
+R2:  0.9479974746410692
+
+Epoch # 58 done
+R2:  0.9483169597574297
+
+Epoch # 59 done
+R2:  0.9482953164234074
+
+Epoch # 60 done
+R2:  0.948761463189332
+
+Epoch # 61 done
+R2:  0.9488154688181495
+
+Epoch # 62 done
+R2:  0.9485562075913868
+
+Epoch # 63 done
+R2:  0.9497482105763919
+
+Epoch # 64 done
+R2:  0.9492185569519245
+
+Epoch # 65 done
+R2:  0.9495454517523206
+
+Epoch # 66 done
+R2:  0.9502741720356069
+
+Epoch # 67 done
+R2:  0.9492426318366153
+
+Epoch # 68 done
+R2:  0.9507838668895089
+
+Epoch # 69 done
+R2:  0.9504833081912873
+
+Epoch # 70 done
+R2:  0.9514868044284267
+
+Epoch # 71 done
+R2:  0.9512529078269213
+
+Epoch # 72 done
+R2:  0.9516779661392485
+
+Epoch # 73 done
+R2:  0.9529314339840674
+
+Epoch # 74 done
+R2:  0.9517780066884193
+
+Epoch # 75 done
+R2:  0.9524593140090356
+
+Epoch # 76 done
+R2:  0.9521494286199997
+
+Epoch # 77 done
+R2:  0.9521250437444873
+
+Epoch # 78 done
+R2:  0.9523955036854466
+
+Epoch # 79 done
+R2:  0.9526877932658115
+
+Epoch # 80 done
+R2:  0.9516763401690322
+
+Epoch # 81 done
+R2:  0.9520312024498933
+
+Epoch # 82 done
+R2:  0.9517805643597497
+
+Epoch # 83 done
+R2:  0.9526774143638561
+
+Epoch # 84 done
+R2:  0.9516200690097073
+
+Epoch # 85 done
+R2:  0.9517830511171567
+
+Epoch # 86 done
+R2:  0.9529503831540899
+
+Epoch # 87 done
+R2:  0.9533228741161601
+
+Epoch # 88 done
+R2:  0.9545691052083979
+
+Epoch # 89 done
+R2:  0.9551875318481963
+
+Epoch # 90 done
+R2:  0.95460339119053
+
+Epoch # 91 done
+R2:  0.9539704487754362
+
+Epoch # 92 done
+R2:  0.9536440735819899
+
+Epoch # 93 done
+R2:  0.9546509437257157
+
+Epoch # 94 done
+R2:  0.9543761823866094
+
+Epoch # 95 done
+R2:  0.9552100083088235
+
+Epoch # 96 done
+R2:  0.9554949660173362
+
+Epoch # 97 done
+R2:  0.9558768067535721
+
+Epoch # 98 done
+R2:  0.9557182588925774
+
+Epoch # 99 done
+R2:  0.9552757855101297
+
+Epoch # 100 done
+R2:  0.9555526601130643
